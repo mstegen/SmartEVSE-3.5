@@ -2068,6 +2068,7 @@ void CalcIsum(void) {
         MainsMeter.Irms[x] -= batteryPerPhase;
         Isum = Isum + MainsMeter.Irms[x];
     }
+    MainsMeter.CalcImeasured();
 }
 
 
